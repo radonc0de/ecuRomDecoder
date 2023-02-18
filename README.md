@@ -6,7 +6,7 @@ ECU ROMs are binary files that encode for constants that the vehicle uses to mak
 
 ## Features
 ### Primary Open Loop Fueling
-Usage:`ecuRomDecoder.py --primary-ol-fueling [path to file]`
+Usage: `ecuRomDecoder.py --primary-ol-fueling [path to file]`
 
 The Primary Open Loop Fueling feature will print a table of the Engine Speed (RPM) vs. Engine Load (g/rev) with corresponding Air/Fuel ratio values to the terminal. Getting this feature to work was the primary inspiration for creating this project as I'm currently working on [openEJ.io](https://openej.io) and this feature will make the process of scaling this table using [openEJ](https://openej.io) much simpler.
 
