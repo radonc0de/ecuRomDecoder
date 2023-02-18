@@ -91,7 +91,7 @@ def setup():
 
 if (len(sys.argv) < 2): 
     sys.exit("No arguments specified. Please run with --help for available arguments.")
-elif(sys.argv[1] == "--primary-ol-fueling"):
+elif(len(sys.argv) >= 3 and sys.argv[1] == "--primary-ol-fueling"):
     setup()
     getPrimOLFueling()
 elif(sys.argv[1] == "--help"):
