@@ -1,18 +1,27 @@
 import sys
 from tabulate import tabulate
 
+ecu02 = ["A4SG900C", "A4SGA00C", "A4SGC00C", "A4SGD10C", "A4SGE00C", "A4SGE01C"]
+ecu03 = ["A4TC300K","A4TC101L","A4TC300L","A4TC400L","A4TC401L"]
+ecu0405 = ["A4TF300E","A4TF400E","A4TF510E","A4TF300F","A4TF500F","A4TF510F","A4TF520F","A4TF800E","A4TF800F","	A4TF810F"]
+
 ecuflash = False
 stock = False
 ecuId = ""
 fb = []
 
 def getPrimOLFueling():
-    if(ecuId == "A4SG900C"): 
+    if(ecuId in ecu02): 
         if (ecuflash): rpmStart = 136029
         elif (stock): rpmStart = 168797
         rpmNum = 18
         loadNum = 16
-    elif(ecuId == "A4TF300F"):
+    elif(ecuId in ecu03):
+        if (ecuflash): rpmStart = 134611
+        elif (stock): rpmStart = 167379
+        rpmNum = 16
+        loadNum = 14
+    elif(ecuId in ecu0405):
         if (ecuflash): rpmStart = 134606
         elif (stock): rpmStart = 167374
         rpmNum = 16
