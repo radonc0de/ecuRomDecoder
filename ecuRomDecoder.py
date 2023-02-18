@@ -36,7 +36,7 @@ def getPrimOLFueling():
         for i in range(0, rpmNum):
             row = []
             for j in range(0, loadNum):
-                #14.7/(1+A2*0.0078125)
+                #14.7/(1+byte*0.0078125)
                 row.append(round(14.7/((0.0078125*fb[afrStart+j+(loadNum*i)])+1), 2))
             afrs.append(row)
     
