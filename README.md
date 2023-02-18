@@ -37,10 +37,13 @@ RPM\LOADS   0.22   0.4    0.58   0.76   0.9    1.04   1.17   1.3    1.44   1.58 
 ---------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----
 ```
 
-## Supported Vehicles
+## Currently Supported Vehicles
 - 2002 Subaru Impreza WRX
 - 2003 Subaru Impreza WRX
 - 2004 Subaru Impreza WRX
 - 2005 Subaru Impreza WRX
 
 If you'd like to use this tool for your Subaru, please create an issue with the year and model and I'll try to add the implementation.
+
+## Future Plans
+- Looking to drastically increase amount of supported vehicles and data accessible by creating a collection of ECU accessibility information. This way, many more ECU ROMs can be used and many more data tables can be requested. 
